@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Router, navigate } from '@reach/router';
+import firebase from './Components/Firebase'
 
-import Home from './components/Home';
-import Navigation from './components/Navigation';
-import Register from './components/Register';
-import Login from './components/Login';
+import Home from './Components/Home';
+import Navigation from './Components/Navigation';
+import Register from './Components/Register';
+import Login from './Components/Login';
 
 class App extends Component {
   constructor(){

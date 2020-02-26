@@ -6,10 +6,10 @@ nav-item {
 
 body {
   background-color: black;
-  background-image: url("fd.png");
+  background-image: url("giphy.gif");
   background-size: cover;
   background-repeat: no-repeat;
-
+  font-family: monospace;
 }
 
 #nav1 {
