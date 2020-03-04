@@ -29,28 +29,28 @@ class Home extends Component {
                                         {user == null && (
                                             <span>
                                                 <Link 
+                                                    to="/login" 
+                                                    className="btn btn-outline-dark mr-2"
+                                                >
+                                                Log In
+                                                </Link>
+                                                <Link 
                                                     to="/register" 
-                                                    className="btn btn-outline-light mr-2"
+                                                    className="btn btn-outline-dark mr-2"
                                                 >
                                                 Register
                                                 </Link>
 
-                                                <Link 
-                                                    to="/login" 
-                                                    className="btn btn-outline-light mr-2"
-                                                >
-                                                Log In
-                                                </Link>
                                             </span> 
                                         )}
 
                                         {user && (
                                             <span>
                                                 <Link 
-                                                    to="/meetings" 
+                                                    to="/tournaments" 
                                                     className="btn btn-light"
                                                 >
-                                                Meetings
+                                                tournaments
                                                 </Link>
                                             </span>
                                         )}

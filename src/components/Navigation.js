@@ -11,17 +11,18 @@ class Navigation extends Component {
         }
         
         return (
-            <nav className="site-nav family-sans navbar navbar-expand bg-dark navbar-dark higher" style={navStyle}>
+            <nav className="site-nav navbar navbar-expand bg-dark navbar-dark higher" style={navStyle}>
                 <div className="container-fluid">
                     <Link to="/" className="navbar-brand">
-                        <FaExclamation className="mr-1"/> FN Lan
+                        <FaExclamation className="mr-1"/> fn Lan
+                    </Link>
+                    <Link className="nav-item nav-link" to="/tournaments">
+                        tournaments
+                    </Link>
+                    <Link className="nav-item nav-link" to="/createtourney">
+                        new
                     </Link>
                     <div className="navbar-nav ml-auto">
-                        { user && (
-                            <Link className="nav-item nav-link" to="/tournaments">
-                                tournaments
-                            </Link>
-                        )}
                         { !user && (
                             <Link className="nav-item nav-link" to="/login">
                                 log in
